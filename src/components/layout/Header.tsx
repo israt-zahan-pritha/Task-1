@@ -53,7 +53,7 @@ export default function Header() {
           <button className="bg-teal-400 text-white px-4 py-2 rounded-lg hover:bg-teal-500">
             Open Account
           </button>
-
+          {/* Add Toggle Them  */}
           <Button
             variant="ghost"
             size="icon"
@@ -63,6 +63,7 @@ export default function Header() {
             <MoonIcon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
             <span className="sr-only">Toggle theme</span>
           </Button>
+          {/* Add Toggle Them  */}
         </div>
 
         {/* Mobile Menu Button */}
