@@ -32,7 +32,7 @@ export default function Transactions({
           {points.map((point, index) => (
             <li key={index} className="flex items-center space-x-3">
               <Image
-                src="/images/badgeOLD.png"
+                src="/images/badge3.png"
                 alt="Check Icon"
                 width={24}
                 height={24}

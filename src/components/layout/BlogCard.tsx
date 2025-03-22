@@ -29,12 +29,10 @@ export default function BlogCard({
 
       {/* Content Section */}
       <div className="p-5">
-        <h3 className="text-xl md:text-2xl font-medium text-[#1A191E]">
+        <h3 className="text-xl md:text-2xl font-medium text-primary">
           {title}
         </h3>
-        <p className="text-sm md:text-base text-[#1A191E] mt-2">
-          {description}
-        </p>
+        <p className="text-sm md:text-base text-primary mt-2">{description}</p>
 
         {/* Categories */}
         <div className="flex flex-wrap gap-2 mt-4">

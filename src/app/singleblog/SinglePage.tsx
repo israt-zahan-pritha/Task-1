@@ -40,7 +40,7 @@ export default function SinglePage() {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-3xl text-left mt-16">
+      <div className="max-w-5xl text-left mt-16">
         <h2 className="text-3xl font-medium text-primary dark:text-white]">
           Et malesuada fames ac turpis
         </h2>
