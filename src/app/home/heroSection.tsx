@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero1() {
   return (
-    <section className="pt-40 pb-0 bg-[#e8f2ee] dark:bg-white flex flex-col items-center">
+    <section className="pt-20 md:pt-40 pb-0 bg-[#e8f2ee] dark:bg-white flex flex-col items-center">
       {/* Hero Section */}
       <Hero
         title="All in one card."

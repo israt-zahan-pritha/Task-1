@@ -15,7 +15,7 @@ export default function BlogCard({
   categories,
 }: BlogCardProps) {
   return (
-    <div className="bg-white w-full max-w-[380px] h-auto rounded-xl shadow-md overflow-hidden">
+    <div className="dark:bg-gray-900 w-full max-w-[380px] h-auto rounded-xl shadow-md overflow-hidden">
       {/* Image Section */}
       <div className="relative">
         <Image

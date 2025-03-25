@@ -4,7 +4,7 @@ export default function Heading() {
   return (
     <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-8">
       <div>
-        <h2 className="text-center mt-20 font-medium text-5xl md:text-6xl lg:text-8xl py-12 md:py-16 lg:py-24">
+        <h2 className="text-center font-medium text-5xl md:text-6xl lg:text-8xl py-4 md:py-16 lg:py-24">
           Blog
         </h2>
       </div>

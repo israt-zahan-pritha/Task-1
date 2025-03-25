@@ -93,7 +93,6 @@
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
-  --secondary-text: #5bb5a2;
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
@@ -126,3 +125,72 @@
     @apply bg-background text-foreground;
   }
 }
+/* @layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button {
+    @apply text-[14px] sm:text-[16px] md:text-[18px] font-[500];
+  }
+  span {
+    @apply text-[18px] font-[500];
+  }
+  hr {
+    @apply text-[#e8e8e8];
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-sans);
+  }
+  h4,
+  h5,
+  p,
+  span,
+  .anchor,
+  button {
+    font-family: var(--font-inter);
+  }
+}
+
+@layer components {
+  .CustomContainer {
+    @apply mx-auto box-border overflow-hidden px-6;
+    max-width: var(--container-custom);
+  }
+  .heading1 {
+    @apply text-[60px] md:text-[80px] lg:text-[100px] font-medium leading-[1.10] tracking-[-0.03em];
+  }
+  .heading2 {
+    @apply text-[50px] md:text-[65px] lg:text-[80px] font-[500] leading-[1.10] tracking-[-0.03em];
+  }
+  .heading3 {
+    @apply text-[36px] md:text-[55px] lg:text-[64px] font-[500] leading-[1.10] tracking-[-0.03em];
+  }
+  .heading4 {
+    @apply text-[20px] text-[#1A191E]  font-[500];
+  }
+  .heading5 {
+    @apply text-[18px]  font-[500];
+  }
+
+  .paragraph {
+    @apply text-[18px] font-[500];
+  }
+  .anchor {
+    @apply text-[15px] md:text-[16px] lg:text-[18px] font-[500];
+  }
+  //pinterest layout 
+  .testimonial-column {
+    columns: 350px;
+    gap: 32px;
+  }
+  .testimonial-card {
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+  }
+} */

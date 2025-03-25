@@ -8,9 +8,9 @@ import {
 
 export default function SinglePage() {
   return (
-    <div className="flex flex-col items-center mt-24 px-4 sm:px-8">
+    <div className="flex flex-col items-center mt-10 md:mt-24 px-4 sm:px-8">
       {/* Category Button */}
-      <button className="bg-[#E8F2EE] text-[#5BB5A2] mt-20 px-4 py-2 rounded-lg shadow-md">
+      <button className="bg-[#E8F2EE] text-[#5BB5A2]  px-4 py-2 rounded-lg shadow-md">
         App
       </button>
 

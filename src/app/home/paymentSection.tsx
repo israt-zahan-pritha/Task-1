@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PamentSection() {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between bg-[#5AB09D] px-6 md:px-12 lg:px-20 py-16 rounded-lg max-w-[1200px] mx-auto">
+    <section className="flex flex-col lg:flex-row items-center justify-between bg-[#5AB09D] px-6 md:px-12 lg:px-20 pt-16 rounded-lg max-w-[1200px] mx-auto">
       {/* Left Side Content */}
       <div className="max-w-lg text-white">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal leading-tight">

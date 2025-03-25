@@ -11,7 +11,7 @@ const navigation = [
   { name: "Blog", href: "/blog" },
   { name: "SingleBlog", href: "/singleblog" },
   { name: "Features", href: "/features" },
-  { name: "Compare", href: "/compare" },
+  { name: "Price", href: "/price" },
 ];
 
 export default function Header() {
@@ -35,14 +35,14 @@ export default function Header() {
           </div>
 
           {/* Desktop Navbar */}
-          <ul className="hidden md:flex space-x-6 text-primary text-base font-medium dark:text-gray-200">
+          <ul className="hidden md:flex space-x-6 text-primary text-lg font-medium dark:text-gray-200">
             {navigation.map((item) => (
               <li
                 key={item.name}
-                className="relative flex items-center space-x-1 cursor-pointer hover:text-gray-500"
+                className="relative flex items-center space-x-1 cursor-pointer hover:text-[#5BB5A2]"
               >
                 <Link href={item.href}>{item.name}</Link>
-                {(item.name === "Features" || item.name === "Compare") && (
+                {(item.name === "Features" || item.name === "Price") && (
                   <ChevronDown className="h-4 w-4" />
                 )}
               </li>
@@ -50,11 +50,11 @@ export default function Header() {
           </ul>
 
           {/* Buttons & Theme Toggle */}
-          <div className="hidden md:flex space-x-4 items-center">
-            <button className="text-teal-500 dark:text-teal-300 hover:text-teal-700">
+          <div className="hidden md:flex space-x-4 items-center ">
+            <button className="text-[#5BB5A2]  dark:text-white hover:text-teal-700 text-lg">
               Login
             </button>
-            <button className="bg-teal-400 text-white px-4 py-2 rounded-lg hover:bg-teal-500">
+            <button className="bg-[#5BB5A2] text-white px-4 py-2 rounded-lg hover:bg-black dark:hover:bg-[#5BB5A2]">
               Open Account
             </button>
             <Button
@@ -112,7 +112,7 @@ export default function Header() {
                 <Link href={item.href} onClick={() => setIsOpen(false)}>
                   {item.name}
                 </Link>
-                {(item.name === "Features" || item.name === "Compare") && (
+                {(item.name === "Features" || item.name === "Price") && (
                   <ChevronDown className="h-4 w-4" />
                 )}
               </li>
@@ -122,13 +122,13 @@ export default function Header() {
           {/* Mobile Buttons */}
           <div className="flex flex-col space-y-4 mt-6 px-6">
             <button
-              className="text-teal-500 dark:text-teal-300 hover:text-teal-700 text-left"
+              className="text-[#5BB5A2] dark:text-teal-300 hover:text-teal-700 text-left"
               onClick={() => setIsOpen(false)}
             >
               Login
             </button>
             <button
-              className="bg-teal-400 text-white px-4 py-2 rounded-lg hover:bg-teal-500 text-left"
+              className="bg-teal-400 text-white px-4 py-2 rounded-lg hover:bg-[#5BB5A2] text-left"
               onClick={() => setIsOpen(false)}
             >
               Open Account
