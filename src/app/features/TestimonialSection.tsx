@@ -1,49 +1,64 @@
 "use client";
 
 import Image from "next/image";
+import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-    name: "Cody Fisher",
-    role: "Medical Assistant",
-    text: "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.",
     title: "Sunt qui esse pariatur duis deserunt mollit",
+    content:
+      "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+    author: "Cody Fisher",
+    position: "Medical Assistant",
   },
+
   {
-    name: "Jenny Wilson",
-    role: "Nursing Assistant",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    title: "At lectus urna duis convallis tellus",
-  },
-  {
-    name: "Guy Hawkins",
-    role: "President of Sales",
-    text: "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur.",
     title: "Elit aute irure tempor cupidatat incididunt",
+    content:
+      "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Est aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
+    author: "Guy Hawkins",
+    position: "President of Sales",
   },
   {
-    name: "Darlene Robertson",
-    role: "Dog Trainer",
-    text: "Etiam accumsan porta neque in viverra. Proin eleifend, eros in tristique hendrerit.",
+    title: "At lectus urna duis convallis tellus",
+    content: (
+      <>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut accumsan sit amet
+        nulla facilisi morbi. <br />
+        <br /> In nibh mauris cursus mattis. At lectus urna duis convallis
+        convallis tellus. Enim blandit volutpat maecenas volutpat.
+      </>
+    ),
+    author: "Jenny Wilson",
+    position: "Nursing Assistant",
+  },
+  {
+    title: "Sunt qui esse pariatur duis deserunt mollit",
+    content:
+      "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Est aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
+    author: "Cody Fisher",
+    position: "Medical Assistant",
+  },
+  {
     title: "Donec et fringilla neque",
+    content:
+      "Etiam accumsan porta neque in viverra. Proin eleifend, eros in tristique hendrerit, nisl purus cursus sapien, id ultricies nunc tellus a ipsum. Donec et fringilla neque. Aenean consequat purus quis lectus maximus fermentum.",
+    author: "Darlene Robertson",
+    position: "Dog Trainer",
   },
   {
-    name: "Dianne Russell",
-    role: "Medical Assistant",
-    text: "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.",
     title: "Etiam accumsan porta neque eros",
-  },
-  {
-    name: "Dianne Russell",
-    role: "Medical Assistant",
-    text: "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.",
-    title: "Etiam accumsan porta neque eros",
+    content:
+      "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.",
+    author: "Dianne Russell",
+    position: "Medical Assistant",
   },
 ];
 
 export default function TestimonialSection() {
   return (
-    <section className="max-w-[1200px] mx-auto px-6 py-16 md:px-0">
+    <section className="flex flex-col max-w-[1200px] mx-auto px-6 py-16 md:px-0">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-center pb-12">
         <div>
@@ -63,32 +78,41 @@ export default function TestimonialSection() {
         </div>
       </div>
 
-      {/* Testimonials Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {testimonials.map((item, index) => (
+      <div className=" testimonial-column ">
+        {testimonials.map((testimonial, index) => (
           <div
+            className="flex flex-col items-start justify-center p-8 bg-white rounded-xl border border-gray-100  shadow-sm hover:shadow-md transition-shadow mb-8 testimonial-card"
             key={index}
-            className="border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg"
           >
-            <Image
-              src="/images/rating.png"
-              alt="Rating"
-              width={100}
-              height={20}
-              className="mb-2"
-            />
-            <h3 className="text-[24px] md:text-[28px] font-medium text-primary dark:text-white">
-              {item.title}
-            </h3>
-            <p className="text-primary dark:text-gray-300 font-medium text-base mt-2">
-              {item.text}
+            <div className="flex items-center gap-1 mb-2">
+              <span>
+                <FaStar size={20} className="text-[#5BB5A2]" />
+              </span>
+              <span>
+                <FaStar size={20} className="text-[#5BB5A2]" />
+              </span>
+              <span>
+                <FaStar size={20} className="text-[#5BB5A2]" />
+              </span>
+              <span>
+                <FaStar size={20} className="text-[#5BB5A2]" />
+              </span>
+              <span>
+                <FaStar size={20} className="text-[#5BB5A2]" />
+              </span>
+            </div>
+            <h4 className="text-24px md:text-[28px] mb-4 text-[#1A191E] font-medium">
+              {testimonial.title}
+            </h4>
+            <p className="text-[16px] mb-6 font-medium">
+              {testimonial.content}
             </p>
-            <p className="mt-4 font-medium text-lg text-primary dark:text-white">
-              {item.name}
-            </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              {item.role}
-            </p>
+            <div>
+              <p className="paragraph">{testimonial.author}</p>
+              <p className="text-[14px] text-[#1A191E80] font-medium">
+                {testimonial.position}
+              </p>
+            </div>
           </div>
         ))}
       </div>

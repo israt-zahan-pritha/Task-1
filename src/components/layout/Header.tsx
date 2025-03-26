@@ -153,11 +153,6 @@ export default function Header() {
           </div>
         </div>
       </header>
-
-      {/* Hero Section Content */}
-      <main className="pt-[100px]">
-        {/* Hero Section or other content goes here */}
-      </main>
     </>
   );
 }
