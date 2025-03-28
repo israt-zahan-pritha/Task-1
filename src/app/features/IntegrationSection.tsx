@@ -10,7 +10,7 @@ export default function IntegrationSection() {
   ];
 
   return (
-    <section className="max-w-[1200px] flex flex-col mx-auto mb-40 px-6 ">
+    <section className="max-w-[1200px] flex flex-col mx-auto mb-20 md:mb-40 px-6 ">
       {/* Grid Image */}
       <div className="flex justify-start">
         <Image

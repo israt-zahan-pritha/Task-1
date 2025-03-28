@@ -51,7 +51,7 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <section className="flex flex-col max-w-[1200px] mx-auto px-6 pb-40 ">
+    <section className="flex flex-col max-w-[1200px] mx-auto px-6 pb-20 md:pb-40 ">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-center pb-12">
         <div>

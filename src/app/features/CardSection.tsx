@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CardSection() {
   return (
-    <div className="flex flex-col items-center text-center py-40 px-6 border-t border-gray-200 dark:border-gray-700 px-6">
+    <div className="flex flex-col items-center text-center py-20 md:py-40 px-6 border-t border-gray-200 dark:border-gray-700 ">
       <h4 className="text-xl text-primary dark:text-white font-medium">
         Account
       </h4>

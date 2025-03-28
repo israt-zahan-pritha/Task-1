@@ -40,7 +40,7 @@ const items = [
 
 export default function OrganizeMoney() {
   return (
-    <section className="max-w-[1200px] mx-auto pt-40 px-6 ">
+    <section className="max-w-[1200px] mx-auto pt-20 md:pt-40 px-6 ">
       <div className="flex flex-col md:flex-row justify-between items-center  gap-2">
         <div className="text-center md:text-left ">
           <p className="text-xl text-primary dark:text-white font-medium">
