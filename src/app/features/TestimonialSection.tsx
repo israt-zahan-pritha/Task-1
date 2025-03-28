@@ -21,15 +21,8 @@ const testimonials = [
   },
   {
     title: "At lectus urna duis convallis tellus",
-    content: (
-      <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut accumsan sit amet
-        nulla facilisi morbi. <br />
-        <br /> In nibh mauris cursus mattis. At lectus urna duis convallis
-        convallis tellus. Enim blandit volutpat maecenas volutpat.
-      </>
-    ),
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut accumsan sit amet nulla facilisi morbi. <br /><br /> In nibh mauris cursus mattis. At lectus urna duis convallisconvallis tellus. Enim blandit volutpat maecenas volutpat.",
     author: "Jenny Wilson",
     position: "Nursing Assistant",
   },
@@ -58,7 +51,7 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <section className="flex flex-col max-w-[1200px] mx-auto px-6 py-16 md:px-0">
+    <section className="flex flex-col max-w-[1200px] mx-auto px-6 pb-40 ">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-center pb-12">
         <div>
@@ -104,11 +97,11 @@ export default function TestimonialSection() {
             <h4 className="text-24px md:text-[28px] mb-4 text-[#1A191E] font-medium">
               {testimonial.title}
             </h4>
-            <p className="text-[16px] mb-6 font-medium">
+            <p className="text-[16px] mb-6 font-medium dark:text-black">
               {testimonial.content}
             </p>
             <div>
-              <p className="paragraph">{testimonial.author}</p>
+              <p className="paragraph dark:text-black">{testimonial.author}</p>
               <p className="text-[14px] text-[#1A191E80] font-medium">
                 {testimonial.position}
               </p>

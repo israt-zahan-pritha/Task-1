@@ -55,7 +55,7 @@ const sections = [
 
 export default function FeaturesTable() {
   return (
-    <div className="w-full max-w-[1200px] mx-auto p-6 md:p-8">
+    <div className="w-full max-w-[1400px] mx-auto px-6">
       {sections.map((section, sectionIndex) => (
         <div key={sectionIndex} className="mb-10">
           <h2 className="text-xl md:text-2xl font-semibold mt-16 md:mt-32 mb-4">

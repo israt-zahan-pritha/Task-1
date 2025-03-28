@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function PamentSection() {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between bg-[#5AB09D] px-6 md:px-12 lg:px-20 pt-16 rounded-lg max-w-[1200px] mx-auto">
+    <section className="flex flex-col lg:flex-row items-center justify-between bg-[#5AB09D] px-12 lg:px-[76px]  rounded-lg max-w-[1200px] mx-auto">
       {/* Left Side Content */}
-      <div className="max-w-lg text-white">
+      <div className="max-w-lg py-12 lg:py-24 text-white">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal leading-tight">
           One app. <br /> One banking.
         </h2>
-        <p className="text-lg md:text-xl font-normal mt-4">
+        <p className="text-lg md:text-xl font-light mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna.
         </p>
@@ -53,13 +53,13 @@ export default function PamentSection() {
       </div>
 
       {/* Right Side Image */}
-      <div className="mt-10 lg:mt-0">
+      <div className="pb-0">
         <Image
           src="/images/app4.png"
           alt="Banking App"
           width={400}
           height={400}
-          className="w-full max-w-[400px]"
+          className="w-full pt-32 pb-0 max-w-[400px]"
         />
       </div>
     </section>

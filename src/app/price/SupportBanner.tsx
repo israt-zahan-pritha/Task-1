@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SupportBanner() {
   return (
-    <div className="bg-[#5BB5A2] dark:bg-[#4aa892] p-8 rounded-lg flex flex-col md:flex-row items-center justify-between text-white dark:text-gray-100 max-w-[1200px] mx-auto my-16 gap-6 md:gap-16">
+    <div className="bg-[#5BB5A2]  dark:bg-[#4aa892] p-8 rounded-lg flex flex-col md:flex-row items-center justify-between text-white dark:text-gray-100 max-w-[1200px] mx-auto my-16 gap-6 md:gap-16">
       {/* Left Section */}
       <div className="text-center md:text-left">
         <h2 className="text-2xl md:text-[28px] font-semibold">

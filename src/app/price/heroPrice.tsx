@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function HeroPrice() {
   return (
     <section className="bg-[#E8F2EE] dark:bg-white">
-      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 pt-20">
+      <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between mt-24 px-6 pt-20">
         {/* Left Section */}
         <div className="text-center md:text-left">
           <p className="mt-4 text-primary text-xl font-medium dark:text-black">

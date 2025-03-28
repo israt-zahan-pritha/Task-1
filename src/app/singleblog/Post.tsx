@@ -30,8 +30,8 @@ export default function Post() {
   );
 
   return (
-    <div className="mx-auto max-w-[1400px] mt-8 px-4 md:px-6 lg:px-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 lg:gap-20 pb-16 md:pb-20 lg:pb-28 justify-center place-items-center">
+    <div className="mx-auto max-w-[1222px] mt-8 px-6 lg:px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[33px] pb-16 md:pb-20 lg:pb-28 justify-center place-items-center">
         {blogPosts.map((post, index) => (
           <BlogCard key={index} {...post} />
         ))}

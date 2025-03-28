@@ -4,7 +4,7 @@ export default function PriceSection() {
   return (
     <section className="flex flex-col items-center justify-center pt-20 px-6">
       {/* Pricing Plans */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10 md:mt-16 max-w-[1200px] w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10 md:mt-16 max-w-[1400px] w-full">
         {/* Pricing Card Component */}
         {[
           {
@@ -26,10 +26,7 @@ export default function PriceSection() {
             period: "per month",
           },
         ].map(({ name, price, image, badge, period }, index) => (
-          <div
-            key={index}
-            className="text-center p-6 border border-gray-200 rounded-lg shadow-lg bg-white dark:bg-gray-900"
-          >
+          <div key={index} className="text-center p-6 rounded-lg">
             <h3 className="text-xl md:text-2xl font-medium flex items-center justify-center gap-2">
               {name}
               {badge && (
@@ -58,7 +55,7 @@ export default function PriceSection() {
               priority
             />
             <button
-              className="bg-[#5BB5A2] text-white px-6 py-3 mt-4 rounded-md w-full hover:bg-[#4aa892] transition"
+              className="bg-[#5BB5A2] max-w-[355px] text-white px-6 py-3 mt-4 rounded-md w-full hover:bg-[#4aa892] transition"
               aria-label={`Get started with ${name} plan`}
             >
               Get started

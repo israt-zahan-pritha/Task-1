@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-white dark:bg-black shadow-md z-50">
+      <header className="fixed top-0 left-0 w-full bg-white dark:bg-black z-50">
         <nav className="max-w-custom h-[91px] mx-auto flex justify-between items-center p-4">
           {/* Logo */}
           <div>
@@ -35,7 +35,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navbar */}
-          <ul className="hidden md:flex space-x-6 text-primary text-lg font-medium dark:text-gray-200">
+          <ul className="hidden md:flex space-x-6 text-primary text-base font-medium dark:text-gray-200">
             {navigation.map((item) => (
               <li
                 key={item.name}
@@ -51,10 +51,10 @@ export default function Header() {
 
           {/* Buttons & Theme Toggle */}
           <div className="hidden md:flex space-x-4 items-center ">
-            <button className="text-[#5BB5A2]  dark:text-white hover:text-teal-700 text-lg">
+            <button className="text-[#5BB5A2]  dark:text-white hover:text-black text-lg">
               Login
             </button>
-            <button className="bg-[#5BB5A2] text-white px-4 py-2 rounded-lg hover:bg-black dark:hover:bg-[#5BB5A2]">
+            <button className="bg-[#5BB5A2] text-[15px] text-white px-4 py-3 rounded-lg hover:bg-black dark:hover:bg-white dark:hover:text-black">
               Open Account
             </button>
             <Button
@@ -80,7 +80,7 @@ export default function Header() {
 
         {/* Mobile Menu with Fixes */}
         <div
-          className={`fixed inset-0 bg-white dark:bg-gray-900 shadow-md p-4 max-h-[40vh] overflow-y-auto transform transition-transform duration-300 ${
+          className={`fixed inset-0 bg-white dark:bg-black shadow-md p-4 max-h-[40vh] overflow-y-auto transform transition-transform duration-300 ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } md:hidden`}
         >
@@ -107,7 +107,7 @@ export default function Header() {
             {navigation.map((item) => (
               <li
                 key={item.name}
-                className="relative flex items-center space-x-1 cursor-pointer hover:text-gray-500"
+                className="relative flex items-center space-x-1 cursor-pointer hover:text-[#5BB5A2]"
               >
                 <Link href={item.href} onClick={() => setIsOpen(false)}>
                   {item.name}
@@ -122,13 +122,13 @@ export default function Header() {
           {/* Mobile Buttons */}
           <div className="flex flex-col space-y-4 mt-6 px-6">
             <button
-              className="text-[#5BB5A2] dark:text-teal-300 hover:text-teal-700 text-left"
+              className="text-[#5BB5A2] dark:text-white hover:text-[#5BB5A2] text-left"
               onClick={() => setIsOpen(false)}
             >
               Login
             </button>
             <button
-              className="bg-teal-400 text-white px-4 py-2 rounded-lg hover:bg-[#5BB5A2] text-left"
+              className="bg-[#5BB5A2] text-white px-4 py-2 rounded-lg hover:bg-[#5BB5A2] text-left"
               onClick={() => setIsOpen(false)}
             >
               Open Account

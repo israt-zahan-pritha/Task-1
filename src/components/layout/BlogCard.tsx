@@ -15,21 +15,15 @@ export default function BlogCard({
   categories,
 }: BlogCardProps) {
   return (
-    <div className="dark:bg-gray-900 w-full max-w-[380px] h-auto rounded-xl shadow-md overflow-hidden">
+    <div className="max-w-[1222px] mx-auto mb-12">
       {/* Image Section */}
-      <div className="relative">
-        <Image
-          src={image}
-          alt={title}
-          width={1600}
-          height={300}
-          className="md:h-[350px] lg:h-[380px] object-cover"
-        />
+      <div>
+        <Image src={image} alt={title} width={378} height={378} />
       </div>
 
       {/* Content Section */}
-      <div className="p-5">
-        <h3 className="text-xl md:text-2xl font-medium text-primary">
+      <div className="max-w-[378px]">
+        <h3 className="text-xl mt-6 md:text-[28px] font-medium text-primary leading-tight">
           {title}
         </h3>
         <p className="text-sm md:text-base text-primary mt-2">{description}</p>
@@ -39,7 +33,7 @@ export default function BlogCard({
           {categories.map((category, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-gray-200 text-gray-800 text-xs md:text-sm rounded-md"
+              className="px-3 py-1 bg-[#F8F8F8] text-primary dark:text-black text-xs md:text-sm rounded-md"
             >
               {category}
             </span>

@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 
 export default function CardSection() {
   return (
-    <div className="flex flex-col items-center text-center py-16 px-6 border-t border-gray-200 dark:border-gray-700">
-      <h4 className="text-2xl text-primary dark:text-white font-medium">
+    <div className="flex flex-col items-center text-center py-40 px-6 border-t border-gray-200 dark:border-gray-700 px-6">
+      <h4 className="text-xl text-primary dark:text-white font-medium">
         Account
       </h4>
       <h2 className="text-5xl sm:text-6xl md:text-[80px] font-medium text-primary dark:text-white mt-2 leading-tight">
@@ -22,18 +22,18 @@ export default function CardSection() {
         <Image
           src="/images/cards3.png"
           alt="Cards"
-          width={400}
-          height={400}
+          width={500}
+          height={500}
           className="rounded-lg shadow-lg"
         />
       </div>
 
       {/* Buttons */}
-      <div className="mt-6 flex flex-col sm:flex-row gap-4">
-        <Button className="bg-[#5BB5A2] hover:bg-black text-white px-6 py-4 text-lg">
+      <div className="mt-14 flex flex-col sm:flex-row gap-4">
+        <Button className="bg-[#5BB5A2] hover:bg-black text-white px-6 py-6 text-lg">
           Open Account
         </Button>
-        <Button className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 text-primary dark:text-white px-6 py-4 text-lg">
+        <Button className="bg-white dark:bg-black border border-gray-200 dark:border-gray-600 text-primary dark:text-white px-6 py-6 text-lg">
           Compare Cards
         </Button>
       </div>

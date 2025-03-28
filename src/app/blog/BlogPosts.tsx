@@ -47,8 +47,8 @@ const blogPosts = [
 
 export default function BlogPosts() {
   return (
-    <div className="mx-auto max-w-custom px-4 md:px-6 lg:px-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 lg:gap-20 pb-16 md:pb-20 lg:pb-28 justify-center place-items-center">
+    <div className=" max-w-[1222px] mx-auto px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-8 pb-12 md:pb-16 lg:pb-24">
         {blogPosts.map((post, index) => (
           <BlogCard key={index} {...post} />
         ))}
